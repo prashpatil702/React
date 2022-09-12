@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
+import Message from './components/Message';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Welcome name="First" heroname="Batman" />
       <Welcome name="Second" heroname="Supeman" />
       <Welcome name="Third" heroname="Spiderman" />
+
+      <Message></Message>
     </div>
   );
 }
