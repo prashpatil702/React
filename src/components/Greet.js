@@ -1,8 +1,8 @@
 import React from 'react'
 
-const greet = (props) => {
+const greet = ({name,heroname}) => {
     return(
-        <h1>Hello {props.name} a.k.a {props.heroname}</h1>
+        <h1>Hello {name} a.k.a {heroname} updated</h1>
     )
 
 }

@@ -23,13 +23,20 @@ class Counter extends Component
         )
         //console.log(this.state.count) 
     }
+
+    buttonClickEvent()
+    {
+        console.log("Button Clicked from class component")
+    }
     render()
     {
         return(
             <div>
 
                 Count - {this.state.count}
-                <button onClick={()=> this.increment()}>Increment</button>
+                <button onClick={()=> this.increment()}>Increment</button>   
+                <button onClick={this.buttonClickEvent}>Event </button>
+                
             </div>
         )
     }
